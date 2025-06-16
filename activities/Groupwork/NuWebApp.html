@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NU Clark Online Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #ffffff;
+        color: #1f2b6c;
+      }
+
+      .navbar {
+        background-color: #1f2b6c !important;
+        padding: 1rem 2rem;
+      }
+
+      .navbar-brand img {
+        height: 36px;
+      }
+
+      .hero-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(to right, #1f2b6c, #f9b233);
+        color: #fff;
+        padding: 100px 2rem;
+
+        /* Animation start state */
+        opacity: 0;
+        animation: fadeSlideUp 1s ease forwards;
+        animation-delay: 0.3s;
+      }
+
+      .hero-text {
+        flex: 1;
+        padding: 1rem;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      .hero-text p {
+        font-size: 1.125rem;
+        margin: 1rem 0 1.5rem;
+      }
+
+      .hero-img {
+        flex: 1;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .hero-img img {
+        max-width: 100%;
+        border-radius: 1rem;
+      }
+
+      .section-title {
+        color: #f9b233;
+      }
+
+      .service-box {
+        background-color: #f4f6fc;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        transition: 0.3s ease;
+        max-width: 300px;
+        flex: 1 1 300px;
+        color: #1f2b6c;
+      }
+
+      .service-box:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .service-box img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .note {
+        font-size: 0.875rem;
+        color: #f9b233;
+      }
+
+      .btn-gold {
+        background-color: #f9b233;
+        color: #1f2b6c;
+        font-weight: 600;
+        border: none;
+      }
+
+      .btn-gold:hover {
+        background-color: #ffd45e;
+        color: #1f2b6c;
+      }
+
+      .btn-white {
+        background-color: #ffffff;
+        color: #1f2b6c;
+        font-weight: 600;
+        border: none;
+      }
+
+      .btn-white:hover {
+        background-color: #bdbdbd;
+      }
+
+      .btn-outline-primary {
+        border-color: #1f2b6c;
+        color: #1f2b6c;
+      }
+
+      .btn-outline-primary:hover {
+        background-color: #1f2b6c;
+        color: #fff;
+      }
+
+      footer {
+        background-color: #1f2b6c;
+        color: #fff;
+        padding: 3rem 1rem;
+        text-align: center;
+      }
+
+      footer h5 {
+        margin-top: 1rem;
+        font-weight: 600;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+      }
+
+      /* Animation keyframes */
+      @keyframes fadeSlideUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Online services items start hidden */
+      .service-item {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+
+      /* When in view, apply fade & slide up */
+      .service-item.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="NU_shield.svg.png" alt="NU Logo" />
+          NU CLARK
+        </a>
+        <div class="text-white small">Welcome to NU Clark ▾</div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="hero-text">
+        <h1>Education that works.</h1>
+        <p>Convenient, secure, and efficient access to NU Clark’s online services — anytime, anywhere.</p>
+        <a href="nuis-dashboard.html" class="btn btn-gold px-4 py-2">Access NUIS</a>
+        <a href="../../index.html" class="btn btn-white px-4 py-2">Back To Portfolio</a>
+      </div>
+      <div class="hero-img">
+        <img src="bulldogs.jpg" alt="NU Students" />
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5 text-primary">Our Online Services</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <ul class="list-unstyled">
+              <!-- NU Quest -->
+              <li class="mb-5 d-flex align-items-center service-item">
+                <div class="flex-shrink-0 me-4">
+                  <img src="quest.jpg" alt="NU Quest" class="rounded" style="width: 80px; height: 80px; object-fit: contain;" />
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">NU Quest</h5>
+                  <p class="mb-1">Create your profile and book your entrance exam easily.</p>
+                  <p class="text-warning small mb-2">For NU Admission Applicants only.</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm me-2">Login</a>
+                  <a href="#" class="btn btn-warning btn-sm text-white">Register</a>
+                </div>
+              </li>
+
+              <!-- NUIS -->
+              <li class="mb-5 d-flex align-items-center service-item">
+                <div class="flex-shrink-0 me-4">
+                  <img src="public_nuis.webp" alt="NUIS" class="rounded" style="width: 80px; height: 80px; object-fit: contain;" />
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">NUIS</h5>
+                  <p class="mb-1">Access academic and student services through NUIS.</p>
+                  <p class="text-warning small mb-2">For Nationalians only.</p>
+                  <a href="nuis-dashboard.html" class="btn btn-outline-primary btn-sm">Login</a>
+                </div>
+              </li>
+
+              <!-- NU Bills -->
+              <li class="d-flex align-items-center service-item">
+                <div class="flex-shrink-0 me-4">
+                  <img src="onlinepayment.jpg" alt="NU Bills" class="rounded" style="width: 80px; height: 80px; object-fit: contain;" />
+                </div>
+                <div>
+                  <h5 class="fw-bold mb-1">NU Bills</h5>
+                  <p class="mb-1">Pay tuition and other school-related fees online.</p>
+                  <p class="text-warning small mb-2">Guests must register for access.</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm me-2">Login</a>
+                  <a href="#" class="btn btn-warning btn-sm text-white">Register</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <img src="NU_shield.svg.png" alt="NU Logo" height="50" />
+      <h5 style="color: #f9b233;">NATIONAL UNIVERSITY</h5>
+      <p class="mt-3">All Rights Reserved. NU Online Services is your digital hub for essential academic services and transactions.</p>
+      <p class="mt-3">Clark Tech Hub 8, SM City Clark Expansion<br />Mabalacat City, Pampanga 2010, Philippines</p>
+      <p>📱 +63919 081 4634 | 📧 admissions@nu-clark.edu.ph</p>
+      <p>🕒 Mon–Fri: 8:30AM–5:30PM | Sat: 8:30AM–12:30PM</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Scroll animation for service list items
+      document.addEventListener('DOMContentLoaded', () => {
+        const serviceItems = document.querySelectorAll('.service-item');
+
+        function onScroll() {
+          const triggerBottom = window.innerHeight * 0.9;
+
+          serviceItems.forEach(item => {
+            const itemTop = item.getBoundingClientRect().top;
+
+            if (itemTop < triggerBottom) {
+              item.classList.add('visible');
+            }
+          });
+        }
+
+        window.addEventListener('scroll', onScroll);
+        onScroll(); // Run on load too
+      });
+    </script>
+  </body>
+</html>

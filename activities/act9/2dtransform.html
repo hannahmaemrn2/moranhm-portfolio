@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 9 - Animations, Transitions, Navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/index.css"> 
+    <link rel="stylesheet" href="../../css/nav-footer.css"> 
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="../../index.html">Moran.</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#projects">Projects</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="activity-sub-navbar">
+        <div class="container sub-navbar-content">
+            <ul class="sub-navbar-links">
+                <li><a href="activity3.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Animations <span class="dropdown-icon">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="animation.html">Animation 1</a>
+                        <a href="animation2.html">Animation 2</a>
+                        <a href="animation3.html">Animation 3</a>
+                        <a href="animation4.html">Animation 4</a>
+                        <a href="animation5.html">Animation 5</a>
+                        <a href="animation6.html">Animation 6</a>
+                        <a href="animation7.html">Animation 7</a>
+                        <a href="animation8.html">Animation 8</a>
+                        <a href="animation9.html">Animation 9</a>
+                        <a href="animation10.html">Animation 10</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Transitions <span class="dropdown-icon">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="transition.html">Transition 1</a>
+                        <a href="transition2.html">Transition 2</a>
+                        <a href="transition3.html">Transition 3</a>
+                        <a href="transition4.html">Transition 4</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Others <span class="dropdown-icon">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="translatemethod.html">Translate</a>
+                        <a href="2dtransform.html">2D Transform</a>
+                        <a href="webfont.html">Webfont</a> 
+                    </div>                       
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+      <ul class="side">
+        <li class="side"><a class="active" href="2dtransform.html">Home</a></li>
+        <li class="side"><a href="#translate">Translate Method</a></li>
+        <li class="side"><a href="#transition">Transition</a></li>
+        <li class="side"><a href="#about">About</a></li>
+        <li class="side"><a href="#dropdown">Dropdown</a></li>
+        <li class="side"><a href="#webfont">Web Font</a></li>
+      </ul>
+
+    <div class="transform">
+      <h2>Fixed Full-height Side Nav</h2>
+      <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+      <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+      <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+    </div>
+    </main>
+</body>
+</html>

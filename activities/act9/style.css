@@ -1,0 +1,753 @@
+/* activity9-styles.css */
+
+/* --- Main content styling for activity page --- */
+
+
+.activity-intro {
+    font-size: 1.25em;
+    color: #555;
+    margin-bottom: 400px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Inter;
+}
+
+/* --- Animation Demo --- */
+.animation-demo {
+    background-color: #f9f9f9;
+    padding: 100px 0 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 60px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.animation-demo h3 {
+    font-size: 3em;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.animated-box {
+    width: 120px;
+    height: 120px;
+    background-color: #ffd700;
+    margin: 30px auto 20px;
+    border-radius: 15px;
+    animation: colorChangeMove 4s infinite alternate ease-in-out;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Animation 1 */
+div.animation {
+  width: 150px; 
+  height: 150px; 
+  background-color: #ffd700; 
+  animation-name: anim1; 
+  animation-duration: 4s; 
+  margin: 0 auto 100px auto;
+  border-radius: 12px;
+
+}
+
+@keyframes anim1 { 
+  from {background-color: #ffd700;} 
+  to {background-color: #00C4B4;} 
+}
+
+/* Animation 2 */
+div.animation2 {
+  width: 150px;
+  height: 150px;
+  background-color: #ffd700; 
+  animation-name: anim2; 
+  animation-duration: 4s; 
+  margin: 0 auto 100px auto;
+  border-radius: 12px;
+}
+
+@keyframes anim2 { 
+  0%   {background-color: #ffaeed;} 
+  25%  {background-color: #FFD700;} 
+  50%  {background-color: #00C4B4;} 
+  100% {background-color: #ff5361;} 
+}
+
+/* Animation 3 */
+div.animation3 {
+  width: 100px;
+  height: 100px;
+  background-color: #FFD700; 
+  position: relative;
+  animation-name: anim3; 
+  animation-duration: 4s; 
+  margin: 0 auto 150px auto;
+  border-radius: 12px;
+}
+
+@keyframes anim3 { 
+  0%   {background-color:#FFD700; left:0px; top:0px;}
+  25%  {background-color:#81ff81; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#ffaeed; left:0px; top:100px;} 
+  100% {background-color:#ff5361; left:0px; top:0px;}
+}
+
+
+/* Animation 4 */
+div.animation4 {
+  width: 100px;
+  height: 100px;
+  background-color: #FFD700; 
+  position: relative;
+  animation-name: anim4; 
+  animation-duration: 4s; 
+  animation-delay: 2s; 
+  margin: 0 auto 150px auto;
+  border-radius: 12px;
+}
+
+@keyframes anim4 { 
+  0%   {background-color:#FFD700; left:0px; top:0px;}
+  25%  {background-color:#81ff81; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#ffaeed; left:0px; top:100px;} 
+  100% {background-color:#ff5361; left:0px; top:0px;}
+}
+
+
+/* Animation 5 */
+div.animation5 {
+  width: 100px;
+  height: 100px;
+  background-color: #FFD700; 
+  position: relative;
+  animation-name: anim5; 
+  animation-duration: 4s; 
+  animation-iteration-count: 3; 
+  margin: 0 auto 150px auto;
+  border-radius: 12px;
+}
+
+@keyframes anim5 { 
+  0%   {background-color:#FFD700; left:0px; top:0px;}
+  25%  {background-color:#81ff81; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#ffaeed; left:0px; top:100px;} 
+  100% {background-color:#ff5361; left:0px; top:0px;}
+}
+
+/* Animation 6 */
+div.animation6 {
+  width: 100px;
+  height: 100px;
+  background-color: #FFD700; 
+  position: relative;
+  animation-name: anim6; 
+  animation-duration: 4s; 
+  animation-iteration-count: infinite; 
+  margin: 0 auto 150px auto;
+  border-radius: 12px;
+}
+
+@keyframes anim6 { 
+  0%   {background-color:#FFD700; left:0px; top:0px;}
+  25%  {background-color:#81ff81; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#ffaeed; left:0px; top:100px;} 
+  100% {background-color:#ff5361; left:0px; top:0px;}
+}
+
+/* Animation 7 */
+.animation7-wrapper { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    align-items: center;
+    width: 100%;
+}
+div.animation7 {
+  width: 15%; 
+  height: 50px;
+  background-color: #FFD700; 
+  font-weight: bold;
+  position: relative;
+  animation-name: anim7MyMove; 
+  animation-duration: 6s; 
+  animation-fill-mode: forwards; 
+  margin: 0 auto;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121212; 
+  font-family: Poppins;
+  font-size: 0.8em;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes anim7MyMove { 
+  from {left: 0px;}
+  to {left: 200px;} 
+}
+
+/* Animation 8 */
+div.animation8 {
+  width: 100px;
+  height: 100px;
+  background-color: #FFD700; 
+  position: relative;
+  animation-name: anim8; 
+  animation-duration: 5s; 
+  animation-timing-function: linear; 
+  animation-delay: 2s; 
+  animation-iteration-count: infinite; 
+  animation-direction: alternate; 
+  margin: 0 auto 150px auto;
+  border-radius: 12px;
+}
+
+@keyframes anim8 { 
+  0%   {background-color:#FFD700; left:0px; top:0px;}
+  25%  {background-color:#81ff81; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#ffaeed; left:0px; top:100px;} 
+  100% {background-color:#ff5361; left:0px; top:0px;}
+}
+
+
+/* Animation 9 */
+div.animation9 {
+  width: 100px;
+  height: 100px;
+  background-color: #FFD700;
+  position: relative;
+  animation-name: anim9; 
+  animation-duration: 5s;
+  animation-timing-function: linear; 
+  animation-delay: 2s; 
+  animation-iteration-count: infinite; 
+  animation-direction: alternate; 
+  margin: 0 auto 150px auto;
+  border-radius: 12px;
+}
+
+@keyframes anim9 { 
+  0%   {background-color:#FFD700; left:0px; top:0px;}
+  25%  {background-color:#81ff81; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#ffaeed; left:0px; top:100px;} 
+  100% {background-color:#ff5361; left:0px; top:0px;}
+}
+
+/* Animation 10 (Shorthand Property) */
+div.animation10 {
+  width: 100px;
+  height: 100px;
+  background-color: #FFD700; 
+  position: relative;
+  animation: anim10 5s linear 2s infinite alternate; 
+  margin: 0 auto 150px auto;
+  border-radius: 12px;
+}
+
+@keyframes anim10 { 
+  0%   {background-color:#FFD700; left:0px; top:0px;}
+  25%  {background-color:#81ff81; left:100px; top:0px;} 
+  50%  {background-color:#00C4B4; left:100px; top:100px;} 
+  75%  {background-color:#ffaeed; left:0px; top:100px;} 
+  100% {background-color:#ff5361; left:0px; top:0px;}
+}
+
+/* Transition 1 */
+div.transition {
+  width: 150px; 
+  height: 150px; 
+  background: #FFD700; 
+  transition: width 2s; 
+  margin: 0 auto 100px auto;
+  border-radius: 12px;
+
+}
+
+div.transition:hover {
+  width: 300px; 
+}
+
+/* Transition 2 */
+div.transition2 {
+  width: 150px;
+  height: 150px;
+  background: #FFD700; 
+  transition: width 2s, height 2s; 
+  margin: 0 auto 100px auto;
+  border-radius: 12px;
+
+}
+
+div.transition2:hover {
+  width: 180px; 
+  height: 180px; 
+}
+
+/* Transition 3 */
+div.transition3 {
+  width: 150px;
+  height: 150px;
+  background: #FFD700; 
+  transition: width 2s; 
+  transition-delay: 1s; 
+  margin: 0 auto 100px auto;
+  border-radius: 12px;
+}
+
+div.transition3:hover {
+  width: 300px; 
+}
+
+/* Transition 4 */
+div.transition4 {
+  width: 150px;
+  height: 150px;
+  background: #FFD700; 
+  transition: width 2s, height 2s, transform 2s; 
+  margin: 0 auto 100px auto;
+  border-radius: 12px; 
+
+}
+
+div.transition4:hover {
+  width: 180px; 
+  height: 180px; 
+  transform: rotate(180deg);
+  background-color: #81ff81; 
+
+}
+
+/* Translate Method */
+div.translate {
+  width: 200px; 
+  height: 80px; 
+  background-color: #FFD700; 
+  transform: translate(50px,100px); 
+  margin: 0 auto 180px auto;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121212; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.webfont {
+  font-family: myFirstFont;
+  margin-bottom: 220px;
+  font-size: 1.2em;
+}
+
+/* Webfont */
+@font-face {
+  font-family: myFirstFont;
+  src: url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+  font-weight: bold;
+}
+
+/* 2D Transform */
+div.transform {
+  margin-left: 25%;
+  padding: 25px 55px;
+  height: 100%;
+}
+
+
+ul.side {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #94a9bd;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li.side a {
+  display: block;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.side a.active {
+  background-color: #005cb8;
+  color: white;
+}
+
+li.side a:hover:not(.active) {
+  background-color: #4780b9;
+  color: white;
+}
+/* --- Transition Demo --- */
+.transition-demo {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.transition-demo h3 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.transition-box {
+    width: 200px;
+    height: 100px;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 20px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.4s ease, width 0.4s ease, border-radius 0.4s ease, transform 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.transition-box:hover {
+    background-color: #2c3e50;
+    width: 250px;
+    border-radius: 50px;
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* --- Navigation Demo --- */
+.navigation-demo {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.navigation-demo h3 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.activity-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.activity-nav li {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.activity-nav a {
+    display: block;
+    padding: 15px 20px;
+    color: #f4f4f4;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px; /* Apply to links for individual rounding */
+}
+
+.activity-nav a:hover {
+    background-color: #ffd700;
+    color: #2c3e50;
+}
+
+.content-sections .nav-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.content-sections .nav-content:last-child {
+    margin-bottom: 0;
+}
+
+.content-sections .nav-content h4 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.content-sections .nav-content p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Responsive adjustments for Activity 9 specific elements */
+@media (max-width: 768px) {
+    .activity-section {
+        padding: 60px 20px;
+    }
+
+    .animation-demo, .transition-demo, .navigation-demo {
+        padding: 30px;
+    }
+
+    .animated-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .transition-box {
+        width: 180px;
+        height: 80px;
+        font-size: 1em;
+    }
+
+    .activity-nav ul {
+        flex-direction: column;
+        max-width: 300px;
+        border-radius: 8px;
+    }
+
+    .activity-nav a {
+        padding: 12px 15px;
+        border-radius: 0; /* Remove individual rounding for stack */
+    }
+
+    .activity-nav li:first-child a {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .activity-nav li:last-child a {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .content-sections .nav-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .animation-demo h3, .transition-demo h3, .navigation-demo h3 {
+        font-size: 1.5em;
+    }
+
+    .animated-box {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .transition-box {
+        width: 150px;
+        height: 70px;
+    }
+}
+
+/* activity9-styles.css */
+
+/* --- Sticky Sub Navbar for Activity --- */
+.activity-sub-navbar {
+    background-color: #2c3e50; /* Dark blue from your palette */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 75px; /* Adjust this value based on the height of your main navbar */
+    z-index: 999; /* Ensure it stays above content but below main navbar */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.sub-navbar-content {
+    max-width: 900px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center; /* Center the links */
+}
+
+.sub-navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Space between main links */
+}
+
+.sub-navbar-links li {
+    position: relative; /* For dropdown positioning */
+}
+
+.sub-navbar-links a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.sub-navbar-links a:hover {
+    background-color: #3f5d7b;
+    color: #ffffff; /* Dark blue text on hover */
+}
+
+.dropdown-icon {
+    font-size: 0.8em;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Dropdown specific styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3f5d7b; /* Slightly lighter blue for dropdown background */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 5px;
+    top: 100%; /* Position below the main dropdown link */
+    left: 0;
+    overflow: hidden; /* Ensures border-radius applies nicely */
+    font-family: Inter;
+}
+
+.dropdown-content a {
+    color: #f4f4f4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    white-space: nowrap; /* Prevent text wrapping */
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffd700;
+    color: #2c3e50;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adjust top property of main content for fixed navbar */
+main.activity-section {
+    padding-top: 100px; /* Add extra padding to compensate for sticky sub-navbar */
+    /* ... rest of your existing activity-section styles ... */
+}
+
+
+/* --- Main content styling for activity page (existing) --- */
+.activity-section {
+    padding: 100px 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* ... (rest of your existing CSS for .activity-section, .animation-demo, etc.) ... */
+
+
+/* Responsive adjustments for the new sub-navbar */
+@media (max-width: 992px) {
+    .activity-sub-navbar {
+        top: 100px; /* Adjust if main navbar height changes on smaller screens */
+    }
+
+    .sub-navbar-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sub-navbar-links li {
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content {
+        left: 50%; /* Center dropdown under the button */
+        transform: translateX(-50%);
+        min-width: unset; /* Remove min-width to allow content-based width */
+        width: max-content; /* Fit width to content */
+    }
+}
+
+@media (max-width: 768px) {
+    .activity-sub-navbar {
+        top: 110px; /* Further adjust for smaller screen main navbar changes */
+        padding: 8px 0;
+    }
+
+    .sub-navbar-links {
+        flex-direction: column; /* Stack dropdown items */
+        align-items: center;
+        gap: 5px;
+    }
+
+    .sub-navbar-links a {
+        padding: 8px 10px;
+        font-size: 0.95em;
+    }
+
+    .dropdown-content {
+        position: static; /* Make dropdown flow naturally */
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 0;
+        margin-top: 5px; /* Space from parent link */
+    }
+
+    .dropdown-content a {
+        padding-left: 30px; /* Indent dropdown items */
+        color: #ddd; /* Lighter color for stacked dropdown items */
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ffd700;
+        color: #2c3e50;
+    }
+
+    /* Hide dropdown icon on mobile if not needed for stacked list */
+    .dropdown .dropdown-icon {
+        display: none;
+    }
+}

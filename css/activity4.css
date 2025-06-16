@@ -1,0 +1,113 @@
+/* --- Activity Specific Styles --- */
+.activity-page-content {
+    flex-grow: 1; /* Allows content to take up available space */
+    padding: 80px 50px;
+    background-color: #f1ebeb; /* Consistent with body background */
+    text-align: center;
+    font-family: Poppins;
+}
+
+
+.activity-hero {
+    margin-bottom: 60px;
+}
+
+.activity-title {
+    font-size: 3.5em;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 700;
+}
+
+.activity-description {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.section-subtitle {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.click-instruction {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #777;
+    font-weight: 600;
+}
+
+.activity-subpage-content {
+    flex-grow: 1;
+    padding: 37px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px); /* Adjust based on navbar/footer height */
+    text-align: center;
+}
+
+.activity-subpage-content p {
+    font-size: 1.6em;
+}
+.subpage-title {
+    font-size: 3em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.subpage-return-btn {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: #ffd700;
+    color: #2c3e50;
+    border: 2px solid #ffd700;
+    margin-top: 20px;
+}
+
+.subpage-return-btn:hover {
+    background-color: #e6c200;
+    color: #000000;
+    border-color: #e6c200;
+}
+
+
+
+/* Responsive adjustments for activity pages */
+@media (max-width: 768px) {
+    .activity-title {
+        font-size: 2.5em;
+    }
+
+    .activity-description {
+        font-size: 1em;
+    }
+
+    .section-subtitle {
+        font-size: 2em;
+    }
+
+    .subpage-title {
+        font-size: 2.5em;
+    }
+}

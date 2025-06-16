@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 5 - Table Colspan & Rowspan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/nav-footer.css">
+  <link rel="stylesheet" href="../../css/activity5.css"> </head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="../../index.html">Moran.</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../index.html#projects">Projects</a></li>
+      <li><a href="../../index.html#about">About</a></li>
+      <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="activity-page-content">
+
+    <section class="activity-content">
+      <div class="table-container">
+          <h1>Table Rowspan & Colspan</h1>
+
+          <h2>#1</h2>
+          <div class="table-responsive-wrapper">
+              <table>
+                  <tbody>
+                      <tr>
+                          <td colspan="3"> 1 </td>
+                          <td rowspan="2"> 2 </td>
+                          <td rowspan="2"> 3 </td>
+                      </tr>
+                      <tr>
+                          <td rowspan="2"> 4 </td>
+                          <td> 5 </td>
+                          <td> 6 </td>
+                      </tr>
+                      <tr>
+                          <td colspan="3"> 7 </td>
+                          <td> 8 </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+
+          <h2>#2</h2>
+          <div class="table-responsive-wrapper">
+              <table>
+                  <tbody>
+                      <tr>
+                          <td> 1 </td>
+                          <td colspan="5"> 2 </td>
+                          <td> 3 </td>
+                      </tr>
+                      <tr>
+                          <td rowspan="2"> 4 </td>
+                          <td> 5 </td>
+                          <td rowspan="2"> 6 </td>
+                          <td colspan="3"> 7 </td>
+                          <td rowspan="2"> 8 </td>
+                      </tr>
+                      <tr>
+                          <td> 9 </td>
+                          <td colspan="3"> 10 </td>
+                      </tr>
+                      <tr>
+                          <td colspan="3"> 11 </td>
+                          <td> 12 </td>
+                          <td> 13 </td>
+                          <td> 14 </td>
+                          <td> 15 </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+
+          <h2>#3</h2>
+          <div class="table-responsive-wrapper">
+              <table>
+                  <tbody>
+                      <tr>
+                          <td> 1 </td>
+                          <td rowspan="4"> 2 </td>
+                          <td rowspan="8"> 3 </td>
+                          <td> 4 </td>
+                      </tr>
+    
+                      <tr>
+                          <td>5</td>
+                          <td>6</td>
+                      </tr>
+
+                      <tr>
+                          <td rowspan="2"> 7 </td>
+                          <td rowspan="3"> 8 </td>
+                      </tr>
+
+                      <tr>
+                      </tr>
+
+                      <tr>
+                          <td colspan="2"> 9 </td>
+                      </tr>
+
+                      <tr>
+                          <td rowspan="3"> 10 </td>
+                          <td> 11 </td>
+                          <td> 12 </td>
+                      </tr>
+
+                      <tr>
+                          <td rowspan="2"> 13 </td>
+                          <td> 14 </td>
+                      </tr>
+
+                      <tr>
+                          <td> 15 </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Hannah Moran. Porject Portfolio.</p>
+  </footer>
+</body>
+</html>

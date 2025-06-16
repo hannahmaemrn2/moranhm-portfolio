@@ -1,0 +1,221 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.activity-page-wrapper {
+    flex: 1; /* This is CRUCIAL and must remain to push footer down */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically for shorter content. Use flex-start if content will be very long and you want it to align to the top. */
+    padding: 60px 20px; /* Ample padding around the resume container */
+    box-sizing: border-box; /* Ensures padding is included in element's total width/height */
+    min-height: calc(100vh - var(--navbar-height, 80px) - var(--footer-height, 100px));
+    background-color: #f8f8f8; /* Apply page background here specifically for this page */
+}
+
+.resume-container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff; /* White background for the resume itself */
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    line-height: 1.6;
+    margin: auto;
+}
+
+/* Left Column - for Name and Contact Info */
+.resume-sidebar {
+    flex: 0 0 400px; /* Adjusted fixed width for sidebar, giving more space to content */
+    padding-right: 30px; /* More space between sidebar and main content */
+    border-right: 1px solid #eee; /* Subtle separator line */
+    box-sizing: border-box;
+}
+
+/* Main Content Area - for Sections */
+.resume-main-content {
+    flex: 1; /* Takes remaining space */
+    min-width: 450px; /* Increased minimum width before wrapping */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    font-size: 3em; /* Fine-tuned size for prominence without being overwhelming */
+    margin-bottom: 8px; /* More space below name */
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.contact-info-header {
+    font-size: 0.9em; /* Slightly smaller for secondary info */
+    color: #666;
+    margin-top: 15px; /* More space above contact info */
+    margin-bottom: 50px; /* Increased space below contact info */
+    line-height: 1.6;
+}
+
+.contact-info-header strong {
+    color: #2c3e50;
+    font-weight: 600; /* Make strong text bold */
+}
+
+.contact-info-header a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info-header a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    font-size: 1.7em; /* Balanced size for section titles */
+    margin-top: 40px; /* More space above section titles */
+    margin-bottom: 12px; /* More space below section titles */
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ffd700; /* Accent color underline for section titles */
+    letter-spacing: 0.5px;
+    text-transform: uppercase; /* Uppercase for section titles for clean separation */
+}
+
+.section {
+    margin-bottom: 35px; /* Increased space between sections */
+}
+
+.section p {
+    font-size: 0.98em; /* Slightly adjusted text size for readability */
+    color: #555;
+    margin-bottom: 12px; /* More space between paragraphs */
+    line-height: 1.7; /* Improved line height for body text */
+}
+
+.section strong {
+    color: #333;
+}
+
+.activity2-button {
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0; /* More space above the button, centered */
+    padding: 16px 45px; /* Generous padding for a prominent button */
+    background-color: #ffd700; /* Primary accent color */
+    color: #2c3e50;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px; /* Slightly increased letter-spacing for button */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.activity2-button:hover {
+    background-color: #e6c200;
+    color: #fff;
+    border-color: #e6c200;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Shadow on hover */
+}
+
+/* Define CSS variables for heights, consistent with nav-footer.css */
+:root {
+    --navbar-height: 70px; /* Approximate height of your navbar */
+    --footer-height: 100px; /* Approximate height of your footer */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .resume-container {
+        flex-direction: column; /* Stack columns on medium screens */
+        gap: 0; /* Remove gap when stacking */
+        padding: 40px; /* Adjusted padding */
+    }
+
+    .resume-sidebar {
+        flex: none; /* Remove flex sizing */
+        width: 100%; /* Take full width */
+        padding-right: 0;
+        border-right: none; /* Remove border */
+        padding-bottom: 30px; /* Add space below sidebar when stacked */
+        border-bottom: 1px solid #eee; /* Add bottom border when stacked */
+        text-align: center; /* Center text in stacked sidebar */
+    }
+
+    .resume-main-content {
+        min-width: unset; /* Remove min-width constraint */
+        width: 100%; /* Take full width */
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .contact-info-header {
+        font-size: 0.85em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .editable {
+        padding: 8px 10px; /* Further reduce padding on smaller screens */
+        font-size: 0.9em; /* Further reduce font size on smaller screens */
+    }
+
+    .activity-page-wrapper {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    .activity2-button {
+        padding: 12px 30px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+    .contact-info-header {
+        font-size: 0.75em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    .activity2-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    .activity-page-wrapper {
+        padding: 30px 10px;
+    }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NU Clark - Students</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #ffffff;
+        color: #1f2b6c;
+      }
+      .navbar {
+        background-color: #1f2b6c !important;
+        padding: 1rem 2rem;
+      }
+      .navbar-brand img {
+        height: 36px;
+      }
+      .breadcrumb {
+        font-size: 0.95rem;
+        color: #555;
+        margin-top: 1rem;
+      }
+      .section-title {
+        color: #f9b233;
+      }
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+
+        /* Fade and slide animation on page load */
+        opacity: 0;
+        animation: fadeSlideUp 0.8s ease forwards;
+        animation-delay: 0.3s;
+      }
+      .student-card {
+        background-color: #f4f6fc;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        transition: 0.3s;
+        text-decoration: none;
+        color: #1f2b6c;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+        /* Start hidden for scroll animation */
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      .student-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(31, 43, 108, 0.2);
+      }
+      .student-card h5 {
+        font-size: 1rem;
+        color: #1f2b6c;
+      }
+      .student-card p {
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+      }
+      .btn-gold {
+        background-color: #f9b233;
+        color: #1f2b6c;
+        font-weight: 600;
+        border: none;
+      }
+      .btn-gold:hover {
+        background-color: #ffd45e;
+        color: #1f2b6c;
+      }
+      footer {
+        background-color: #1f2b6c;
+        color: #fff;
+        padding: 3rem 1rem;
+        text-align: center;
+        margin-top: 3rem;
+      }
+      footer h5 {
+        color: #f9b233;
+        margin-top: 1rem;
+        font-weight: 600;
+      }
+      footer p {
+        font-size: 0.9rem;
+      }
+
+      /* Animation keyframes */
+      @keyframes fadeSlideUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Visible class to show cards on scroll */
+      .student-card.visible {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="nuis-dashboard.html">
+          <img src="NU_shield.svg.png" alt="NU Logo" />
+          NUIS CLARK
+        </a>
+        <div class="text-white small">🔔 Hi, Hannah</div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <div class="breadcrumb">🏠 <strong>Home</strong> &gt; Students</div>
+      <h2 class="fw-bold section-title text-center mt-4">Student Services</h2>
+      <div class="card-grid">
+        <a class="student-card" href="#"><h5>👤 My Profile</h5><p>View your personal information, education, and family background.</p></a>
+        <a class="student-card" href="#"><h5>📝 Online Class Registration</h5><p>Reserve and pre-register for classes for the upcoming term.</p></a>
+        <a class="student-card" href="#"><h5>💳 Online Enrollment</h5><p>Complete your enrollment process including class registration and payments.</p></a>
+        <a class="student-card" href="#"><h5>✅ Evaluate my Teacher</h5><p>Submit evaluations for your teachers during the active evaluation period.</p></a>
+        <a class="student-card" href="#"><h5>📋 List of Class Offerings</h5><p>Browse the list of available classes offered by each department this term.</p></a>
+        <a class="student-card" href="#"><h5>📈 My Flowchart</h5><p>Review your academic flowchart and track your course progress.</p></a>
+        <a class="student-card" href="#"><h5>🔐 My Clearance Information</h5><p>Check your department accountabilities and clearance requirements.</p></a>
+        <a class="student-card" href="#"><h5>📅 My Schedule Viewer</h5><p>View schedules and faculty assignments for your enrolled classes.</p></a>
+        <a class="student-card" href="#"><h5>📄 My Student Ledger</h5><p>View your official payment and transaction records with Accounting.</p></a>
+        <a class="student-card" href="#"><h5>📑 Certificate of Registration (COR)</h5><p>Generate and download your official enrollment certificate.</p></a>
+        <a class="student-card" href="#"><h5>📊 View Grades</h5><p>Access your academic performance and grade records for the term.</p></a>
+      </div>
+      <div class="text-center mt-5">
+        <a href="nuis-dashboard.html" class="btn btn-gold px-4 py-2">← Back</a>
+      </div>
+    </main>
+
+    <footer>
+      <img src="NU_shield.svg.png" alt="NU Logo" height="50" />
+      <h5>NATIONAL UNIVERSITY</h5>
+      <p class="mt-3">All Rights Reserved. NU Online Services is your digital hub for essential academic services and transactions.</p>
+      <p class="mt-3">Clark Tech Hub 8, SM City Clark Expansion<br />Mabalacat City, Pampanga 2010, Philippines</p>
+      <p>📱 +63919 081 4634 | 📧 admissions@nu-clark.edu.ph</p>
+      <p>🕒 Mon–Fri: 8:30AM–5:30PM | Sat: 8:30AM–12:30PM</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.student-card');
+
+        function checkVisibility() {
+          const triggerBottom = window.innerHeight * 0.9;
+
+          cards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+            if (cardTop < triggerBottom) {
+              card.classList.add('visible');
+            }
+          });
+        }
+
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility(); // trigger on load
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+/* Specific styles for Activity 1 */
+
+.project-detail-section {
+    padding: 100px 50px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.project-detail-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-detail-title {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+.activity-main-content {
+    text-align: center; /* Center the image and text within this div */
+}
+
+.activity-main-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.activity-main-content h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.activity-main-content h3 {
+    font-size: 1.5em;
+    color: #e6c200;
+    margin-bottom: 30px;
+}
+
+.activity-lyrics {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05em;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center; /* Centers text within the paragraph */
+}
+
+/* Responsive adjustments for activity page */
+@media (max-width: 768px) {
+    .project-detail-section {
+        padding: 60px 20px;
+    }
+
+    .project-detail-content {
+        padding: 25px;
+    }
+
+    .project-detail-title {
+        font-size: 2em;
+    }
+
+    .project-detail-description {
+        font-size: 1em;
+    }
+
+    .activity-main-content h2 {
+        font-size: 2em;
+    }
+
+    .activity-main-content h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-detail-content {
+        padding: 15px;
+    }
+
+    .project-detail-title {
+        font-size: 1.8em;
+    }
+
+    .activity-main-content h2 {
+        font-size: 1.8em;
+    }
+
+    .activity-main-content h3 {
+        font-size: 1em;
+    }
+
+    .activity-lyrics {
+        font-size: 0.95em;
+    }
+}

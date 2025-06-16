@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hannah Moran | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/nav-footer.css">
+  <link rel="stylesheet" href="../../css/activity8.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="../../index.html">Moran.</a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../index.html#projects">Projects</a></li>
+      <li><a href="../../index.html#about">About</a></li>
+      <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-container">
+    <h2>Application Term & Course/Strand</h2>
+
+    <div class="reminder-note">
+        <strong>Reminder:</strong><br>
+        Please provide your correct and complete information.<br>
+        Fields marked with an asterisk (<span class="red">*</span>) are required.
+      </div>
+
+    <form action="../../activities/act8/questfrom.html">
+        <label for="campus">Campus:*</label>
+        <select id="campus" name="campus" required>
+            <optgroup label="National Capital Region (NCR)">
+                <option value="manila">NU Manila</option>
+                <option value="fairview">NU Fairview</option>
+                <option value="moa">NU Moa</option>
+                <option value="eastortigas">NU East Ortigas</option>
+                <option value="laspinas">NU Las Piñas</option>
+            </optgroup>
+            <optgroup label="Region IV-A (CALABARZON)">
+                <option value="laguna">NU Laguna</option>
+                <option value="lipa">NU Lipa</option>
+                <option value="dasmarinas">NU Dasmarinas</option>
+            </optgroup>
+            <optgroup label="Region III (Central Luzon)">
+                <option value="baliwag">NU Baliwag</option>
+                <option value="clark">NU Clark</option>
+            </optgroup>
+            <optgroup label="Region VI (Western Visayas)">
+                <option value="bacolod">NU Bacolod</option>
+            </optgroup>
+            <optgroup label="Region VII (Central Visayas)">
+                <option value="cebu">NU Cebu</option>
+            </optgroup>
+        </select>
+            
+        <label for="academic_year">Academic Year:*</label>
+        <select id="academic_year" name="academic_year" required>
+            <option value="2025 - 2026">2025 - 2026</option>
+            <option value="2026 - 2027">2026 - 2027</option>
+            <option value="2027 - 2028">2027 - 2028</option>
+        </select>
+            
+        <label for="term">Academic Term:*</label>
+        <select id="term" name="term" required>
+            <option value="">Select Term</option>
+            <option value="1st">1st</option>
+            <option value="2nd">2nd</option>
+            <option value="3rd">3rd</option>
+        </select>
+            
+        <label for="applying_for">Applying For:*</label>
+        <select id="applying_for" name="applying_for" required>
+            <option value="">Applying for</option>
+            <option value="Senior High School">Senior High School</option>
+            <option value="College - Freshman">College - Freshman</option>
+            <option value="College - Transferee">College - Transferee</option>
+            <option value="Second Degree Taker">Second Degree Taker</option>
+            <option value="Cross Enrollee">Cross Enrollee</option>
+            <option value="Graduate Studies">Graduate Studies</option>
+        </select>
+            
+        <label for="program">Academic Program:</label>
+        <select id="program" name="program" required>
+            <option value="">Select Program</option>
+
+            <optgroup label="COLLEGE OF COMPUTING AND INFORMATION TECHNOLOGIES (CCIT)">
+                <option value="Associate in Computer Technology (ACT)">Associate in Computer Technology (ACT)</option>
+                <option value="Bachelor of Science in Information Technology">Bachelor of Science in Computer Science with specialization in Digital Forensics (BSCS-DF)</option>
+                <option value="Bachelor of Science in Computer Science with specialization in Machine Learning (BSCS-ML)">Bachelor of Science in Computer Science with specialization in Machine Learning (BSCS-ML)</option>
+                <option value="Bachelor of Science in Information Technology with specialization in Mobile and Web Applications (BSIT-MWA)">Bachelor of Science in Information Technology with specialization in Mobile and Web Applications (BSIT-MWA)</option>
+            </optgroup>
+
+            <optgroup label="COLLEGE OF BUSINESS AND ACCOUNTANCY (CBA)">
+                <option value="Bachelor of Science in Business Administration major in Financial Management (BSBA-FinMgt)">Bachelor of Science in Business Administration major in Financial Management (BSBA-FinMgt)</option>
+                <option value="Bachelor of Science in Accountancy (BSAccountancy)">Bachelor of Science in Accountancy (BSAccountancy)</option>
+                <option value="Bachelor of Science in Business Administration major in Human Resource Management (BSBA-HRM)">Bachelor of Science in Business Administration major in Human Resource Management (BSBA-HRM)</option>
+                <option value="Bachelor of Science in Management Accounting (BSMA)">Bachelor of Science in Management Accounting (BSMA)</option>
+            </optgroup>
+
+            <optgroup label="COLLEGE OF EDUCATION, ARTS AND SCIENCES (CEAS)">
+                <option value="Bachelor of Arts in Communication (ABComm)">Bachelor of Arts in Communication (ABComm)</option>
+                <option value="Bachelor of Arts in English Language Studies (AB-ELS)">Bachelor of Arts in English Language Studies (AB-ELS)</option>
+                <option value="Bachelor of Arts in Political Science (AB-PolSci)">Bachelor of Arts in Political Science (AB-PolSci)</option>
+                <option value="Bachelor of Elementary Education (BEEd)">Bachelor of Elementary Education (BEEd)</option>
+                <option value="Bachelor of Physical Education (BPEd)">Bachelor of Physical Education (BPEd)</option>
+                <option value="Bachelor of Science in Psychology (BSPSY)">Bachelor of Science in Psychology (BSPSY)</option>
+                <option value="Bachelor of Secondary Education major in English (BSEd-ENG)">Bachelor of Secondary Education major in English (BSEd-ENG)</option>
+            </optgroup>
+
+            <optgroup label="COLLEGE OF ARCHITECTURE (COA)">
+                <option value="Bachelor of Science in Architecture (B5Arch)">Bachelor of Science in Architecture (B5Arch)</option>
+                <option value="Bachelor of Science in Environmental Planning (BSEnvPIn)">Bachelor of Science in Environmental Planning (BSEnvPIn)</option>
+            </optgroup>
+
+            <optgroup label="COLLEGE OF ENGINEERING (ENGG)">
+                <option value="Bachelor of Science in Civil Engineering (BSCE)">Bachelor of Science in Civil Engineering (BSCE)</option>
+                <option value="Bachelor of Science in Computer Engineering (BSCpE)">Bachelor of Science in Computer Engineering (BSCpE)</option>
+            </optgroup>
+
+            <optgroup label="COLLEGE OF TOURISM AND HOSPITALITY MANAGEMENT (CTHM)">
+                <option value="Bachelor of Science in Hospitality Management (BSHM)">Bachelor of Science in Hospitality Management (BSHM)</option>
+                <option value="Bachelor of Science in Tourism Management (BSTM)">Bachelor of Science in Tourism Management (BSTM)</option>
+            </optgroup>
+
+            <optgroup label="COLLEGE OF ALLIED HEALTH (CAH)">
+                <option value="Bachelor of Science in Medical Technology (BSMT)">Bachelor of Science in Medical Technology (BSMT)</option>
+                <option value="Bachelor of Science in Nursing (BSN)">Bachelor of Science in Nursing (BSN)</option>
+                <option value="Bachelor of Science in Pharmacy (BSP)">Bachelor of Science in Pharmacy (BSP)</option>
+            </optgroup>
+
+            <optgroup label="Senior High School">
+                <option value="HUMSS">Humanities and Social Sciences</option>
+                <option value="STEM">Science Technology Engineering and Mathematics</option>
+                <option value="GAS">General Academic Strand</option>
+                <option value="ABM">Accountancy Business Management</option>
+            </optgroup>
+        </select>
+
+        <h2>Basic Information</h2>
+        <p class="note"><span class="red">Please write your names based on your PSA/NSO-copy of birth certificate. For married females who want to use their married name, write your names based on your marriage certificate.</span></p>
+
+        <label for="first_name">First Name:*</label>
+        <input type="text" id="first_name" required>
+
+        <label for="middle_name">Middle Name:</label>
+        <input type="text" id="middle_name" placeholder="Leave it blank if not applicable">
+
+        <label for="last_name">Last Name:*</label>
+        <input type="text" id="last_name" required>
+
+        <label for="dob">Date of Birth:*</label>
+        <input type="date" id="dob" required>
+
+        <label for="email">Email Address:*</label>
+        <input type="email" id="email" placeholder="juandelacruz@email.com" required>
+
+        <label for="mobile">Mobile No.:*</label>
+        <input type="text" id="mobile" placeholder="(09) 12345-6789" required>
+
+        <label for="nationality">Nationality:*</label>
+        <select id="nationality" name="nationality" required>
+            <option value="">Select Nationality</option>
+            <option value="Filipino">Filipino</option>
+            <option value="American">American</option>
+            <option value="Canadian">Canadian</option>
+            <option value="British">British</option>
+            <option value="Australian">Australian</option>
+            <option value="Indian">Indian</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Japanese">Japanese</option>
+        </select>
+
+        <div class="privacy">
+            <label>
+                <input type="checkbox" id="consent" required>
+                By accomplishing this form, I hereby authorize National University to retain, process, disseminate, and use for research purposes the information given.
+            </label>
+        </div>
+
+        <div class="actions">
+            <button type="submit" class="create-btn">Submit</button>
+            <button type="reset" class="cancel-btn">Cancel</button>
+        </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Hannah Moran. Porject Portfolio.</p>
+  </footer>
+</body>
+</html>

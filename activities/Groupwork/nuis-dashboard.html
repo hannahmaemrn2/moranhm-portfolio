@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NUIS Clark Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      background-color: #2e3c8d;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 30px;
+      border-bottom: 4px solid #f9b233;
+    }
+
+    .topbar .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .topbar .left img {
+      height: 36px;
+    }
+
+    .topbar .right {
+      font-size: 15px;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content-wrapper {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .greeting {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2e3c8d;
+      margin-bottom: 30px;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .home-label {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #555;
+      gap: 8px;
+    }
+
+    .controls input[type="text"] {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+      width: 220px;
+      font-size: 14px;
+      outline: none;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .controls input[type="text"]:focus {
+      box-shadow: 0 0 8px 2px #2e3c8d;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 25px 20px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      animation: fadeInUp 0.6s ease both;
+    }
+
+    .cards a:nth-child(1) { animation-delay: 0.05s; }
+    .cards a:nth-child(2) { animation-delay: 0.1s; }
+    .cards a:nth-child(3) { animation-delay: 0.15s; }
+
+    .card:hover {
+      box-shadow: 0 8px 20px rgba(46, 60, 141, 0.25);
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      font-size: 18px;
+      color: #2e3c8d;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #444;
+      flex-grow: 1;
+      line-height: 1.4;
+    }
+
+    footer {
+      font-size: 13px;
+      color: #666;
+      padding: 25px 40px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #ccc;
+      background: #fff;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #2e3c8d;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .topbar {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      .controls {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .controls input[type="text"] {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <a href="NuWebApp.html" class="left">
+      <img src="NU_shield.svg.png" alt="NU Logo" />
+      NUIS Clark
+    </a>
+    <div class="right">🔔 Hi, Nicko</div>
+  </div>
+
+  <div class="main-content">
+    <div class="content-wrapper">
+      <p class="greeting">Good afternoon, welcome to your control center!</p>
+
+      <div class="controls">
+        <div class="home-label">🏠 Home</div>
+        <input type="text" placeholder="Search here…" />
+      </div>
+
+      <div class="cards">
+        <a href="#" class="card">
+          <h3>📁 Documents & Manuals</h3>
+          <p>Access important forms, manuals, and administrative documents for students and faculty.</p>
+        </a>
+
+        <a href="#" class="card">
+          <h3>🎓 Student Services</h3>
+          <p>Discover student development programs, support services, and campus activities.</p>
+        </a>
+
+        <a href="students.html" class="card">
+          <h3>🧑‍🎓 Students</h3>
+          <p>Manage student records, grades, accountabilities, and academic information.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>© 2025 National University</div>
+    <div><a href="#">Privacy Policy</a></div>
+  </footer>
+</body>
+</html>
